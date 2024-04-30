@@ -4,7 +4,7 @@ services:
       context: . 
       dockerfile: ./apps/flight/Dockerfile
       target: development
-    command: npm run start:dev orders
+    command: npm run start:dev flight
     env_file:
       - ./apps/flight/.env
     depends_on:

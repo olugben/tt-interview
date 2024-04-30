@@ -9,7 +9,7 @@ import * as Joi from 'joi';
   imports: [ConfigModule.forRoot({isGlobal:true, validationSchema:Joi.object({
     RABBIT_MQ_URI:Joi.string().required(),
     RABBIT_MQ_HOTEL_QUEUE :Joi.string().required
-  }),}), RmqModule],
+  }),envFilePath:"./apps/hotel/.env"}), RmqModule],
   controllers: [HotelController],
   providers: [HotelService],
 })

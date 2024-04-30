@@ -6,6 +6,8 @@ async function bootstrap() {
   const app = await NestFactory.create(HotelModule);
   const rmqservice=app.get<RmqService>(RmqService);
   app.connectMicroservice(rmqservice.getOptions('HOTEL'));
+  
   await app.startAllMicroservices();
 }
 bootstrap();
+ 

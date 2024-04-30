@@ -14,7 +14,7 @@ import { SessionSerializer } from 'apps/auth/src/utils/Serializer';
 import { AuthService } from 'apps/auth/src/auth.service';
 import { PassportModule } from '@nestjs/passport';
 import { Passport } from 'passport';
-import { TypeOrmModule } from '@nestjs/typeorm';
+
 import { AuthModule } from 'apps/auth/src/auth.module';
 
 @Module({
